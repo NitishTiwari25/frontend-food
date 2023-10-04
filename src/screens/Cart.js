@@ -24,7 +24,7 @@ const handleCheckOut = async () => {
   
   //error
   // "http://localhost:5000/api/
-   let response = await fetch("http://localhost:5000/api/orderData", {
+   let response = await fetch("https://backend-food-delivery.onrender.com/api/orderData", {
     // credentials: 'include',
     // Origin:"http://localhost:3000/login",
     method: 'POST',

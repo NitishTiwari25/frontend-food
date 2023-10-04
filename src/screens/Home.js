@@ -10,7 +10,7 @@ export default function Body() {
   const [fooditem, setfooditem] = useState([]);
 
   const loaddata = async () => {
-    let response = await fetch("http://localhost:5000/api/foodData2", {
+    let response = await fetch("https://backend-food-delivery.onrender.com/api/foodData2", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

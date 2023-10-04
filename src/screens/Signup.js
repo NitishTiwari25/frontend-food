@@ -5,7 +5,7 @@ export default function Signup() {
   const [credentials, setcredentials] = useState({ name: "", email: "", password: "", location: "" })
   const handlesubmit = async (e) => {
     e.preventDefault(); //read about preventdefault
-    const response = await fetch("http://localhost:5000/api/createuser", {
+    const response = await fetch("https://backend-food-delivery.onrender.com/api/createuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
