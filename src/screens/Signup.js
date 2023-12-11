@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 
 export default function Signup() {
   const [credentials, setcredentials] = useState({ name: "", email: "", password: "", location: "" })
+  let Navigate = useNavigate();
   const handlesubmit = async (e) => {
     e.preventDefault(); //read about preventdefault
     const response = await fetch("https://backend-food-delivery.onrender.com/api/createuser", {
@@ -15,6 +16,7 @@ export default function Signup() {
 
     const json = await response.json()
     console.log(json);
+    Navigate("/");
 
     if (!json.success) {
       alert("enter valid credentials")
