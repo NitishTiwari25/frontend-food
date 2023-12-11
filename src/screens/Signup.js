@@ -16,7 +16,7 @@ export default function Signup() {
 
     const json = await response.json()
     console.log(json);
-    Navigate("/login.js");
+    Navigate("/login");
 
     if (!json.success) {
       alert("enter valid credentials")
@@ -32,7 +32,7 @@ export default function Signup() {
   return (
     <>
       <div className='container'>
-        {/* <h2>Signup Page</h2> */}
+        <h2>Signup Page</h2>
         <form onSubmit={(handlesubmit)}>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Name</label>
