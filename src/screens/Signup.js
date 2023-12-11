@@ -32,7 +32,7 @@ export default function Signup() {
   return (
     <>
       <div className='container'>
-        <h2>Signup Page</h2>
+        {/* <h2>Signup Page</h2> */}
         <form onSubmit={(handlesubmit)}>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Name</label>
