@@ -16,7 +16,7 @@ export default function Signup() {
 
     const json = await response.json()
     console.log(json);
-    Navigate("/");
+    Navigate("/login");
 
     if (!json.success) {
       alert("enter valid credentials")
