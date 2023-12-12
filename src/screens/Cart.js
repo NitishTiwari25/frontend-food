@@ -68,7 +68,7 @@ const handleCheckOut = async () => {
                 <td style={{"color":"white"}}>{food.qty}</td>
                 <td style={{"color":"white"}}>{food.size}</td>
                 <td style={{"color":"white"}}>{food.price}</td>
-                <td ><button type="button" className="btn p-0"><img   alt="delete" onClick={() => { dispatch({ type: "REMOVE", index: index }) }} /></button> </td>
+                <td ><button type="button" className="btn p-0"><img  src="/public/delete.png" alt="delete" onClick={() => { dispatch({ type: "REMOVE", index: index }) }} /></button> </td>
                 </tr>
             // src={trash}
             
