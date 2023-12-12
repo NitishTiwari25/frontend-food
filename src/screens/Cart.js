@@ -57,7 +57,7 @@ const handleCheckOut = async () => {
               <th style={{"color":"white"}} scope='col' >Quantity</th>
               <th style={{"color":"white"}} scope='col' >Option</th>
               <th style={{"color":"white"}} scope='col' >Amount</th>
-              <th style={{"color":"white"}} scope='col' ></th>
+              <th style={{"color":"white"}} scope='col' >Delete</th>
             </tr>
           </thead>
           <tbody>
